@@ -6,19 +6,29 @@ public class FishDie : MonoBehaviour {
 
 
     private Vector2 originalPos;
+    private Rigidbody2D rb;
 	// Use this for initialization
-	void Start () {
+	void Start ()
+    {
         originalPos = transform.position;
+        rb = gameObject.GetComponent<Rigidbody2D>();
 	}
 	
 	// Update is called once per frame
-	void Update () {
+	void Update ()
+    {
 		
 	}
 
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.name == "deathLine")
-            transform.position = originalPos;
+            fishDie();
+    }
+
+    public void fishDie()
+    {
+        transform.position = originalPos;
+        rb.velocity = Vector3.zero;
     }
 }

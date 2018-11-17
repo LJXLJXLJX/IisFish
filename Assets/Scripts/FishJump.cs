@@ -5,7 +5,7 @@ using UnityEngine;
 public class FishJump : MonoBehaviour
 {
     public float maxStretch;
-    public float forceMagnitude;
+    public float velocityMagnitude;
     public Sprite[] jumpRenders;
 
     private Rigidbody2D rb;
@@ -55,8 +55,8 @@ public class FishJump : MonoBehaviour
         fishToLoosePointRay.direction = vecLoosePointToFish;
         if (vecLoosePointToFish.magnitude > maxStretch)
             loosePoint = fishToLoosePointRay.GetPoint(maxStretch);
-        Vector2 force = transform.position - loosePoint;
-        addForceOnFish(force);
+        Vector2 v = transform.position - loosePoint;
+        addVelocityOnFish(v);
     }
 
 
@@ -73,10 +73,10 @@ public class FishJump : MonoBehaviour
     }
 
 
-    private void addForceOnFish(Vector2 force)
+    private void addVelocityOnFish(Vector2 v)
     {
-        force *= forceMagnitude;
-        rb.AddForceAtPosition(force, transform.position);
+        v *= velocityMagnitude;
+        rb.velocity = v;
     }
 
 
