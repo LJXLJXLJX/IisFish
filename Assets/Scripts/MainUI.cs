@@ -335,7 +335,7 @@ public class MainUI : MonoBehaviour {
 
         // 跳转到Loading界面
         //保存需要加载的目标场景  
-        Globe.nextSceneName = "demo";
+        Globe.nextSceneName = "kitchen";
         //异步加载场景
         SceneManager.LoadScene("LoadingScene");
     }
