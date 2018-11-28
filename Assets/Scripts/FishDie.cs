@@ -23,12 +23,17 @@ public class FishDie : MonoBehaviour {
     private void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.collider.name == "deathLine")
+        {
             fishDie();
+            Debug.Log("you dead");
+        }
     }
 
     public void fishDie()
     {
+        
         transform.position = originalPos;
         rb.velocity = Vector3.zero;
+
     }
 }
