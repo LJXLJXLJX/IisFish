@@ -25,13 +25,11 @@ public class User {
 
 [System.Serializable]
 public class UsersList{
-
-    public int UsersNum;
+    
     public List<User> Users;
 
-    public UsersList(int usersNum, List<User> users)
+    public UsersList(List<User> users)
     {
-        UsersNum = usersNum;
         Users = users;
     }
 
@@ -91,7 +89,7 @@ public class UsersJson : MonoBehaviour{
             User User0 = new User(0, "Admin", "123456");
             List<User> Userslist0 = new List<User>();
             Userslist0.Add(User0);
-            UsersData = new UsersList(1, Userslist0);
+            UsersData = new UsersList(Userslist0);
             string json = JsonMapper.ToJson(UsersData);     //利用JsonMapper将用户信息转为Json格式的文本
             StreamWriter sw = new StreamWriter(appJsonPath + "UsersData.json"); //利用写入流创建文件
             sw.Write(json);     //写入数据
