@@ -39,7 +39,6 @@ public class FishJump : MonoBehaviour
         if (!onGround)
             return;
         clicked = true;
-        Debug.Log("I is fish hehehe...");
     }
 
     private void OnMouseUp()
