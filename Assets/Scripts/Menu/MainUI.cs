@@ -65,7 +65,7 @@ public class MainUI : MonoBehaviour {
         else
         {
             //不存在就设置为默认值
-            PlayerPrefs.SetInt("KEY_SoundSwitch", 50);
+            PlayerPrefs.SetInt("KEY_MusicSwitch", 50);
             SettingsCanvas_MusicSlider.value = PlayerPrefs.GetInt("KEY_MusicSwitch", 0);
         }
 
