@@ -35,13 +35,17 @@ public class Flame : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        GameObject collisionObj;
-        if (collision.collider.tag == "Player")
+        if (GameObject.Find("fish").GetComponent<FishJump>().CollisionEable == true)
         {
-            collisionObj = collision.collider.gameObject;
-            fd = collisionObj.GetComponent<FishDie>();
-            fd.fishDie();
+            GameObject collisionObj;
+            if (collision.collider.tag == "Player")
+            {
+                collisionObj = collision.collider.gameObject;
+                fd = collisionObj.GetComponent<FishDie>();
+                fd.fishDie();
+            }
         }
+
     }
 
 

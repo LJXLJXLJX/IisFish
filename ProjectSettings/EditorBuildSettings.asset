@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/LoadingScene.unity
     guid: 708582b652303624aa635a3a5c0796b4
   - enabled: 1
-    path: Assets/Scene/demo.unity
+    path: Assets/Scenes/kitchen.unity
     guid: 773d5095a2d5ca949bec3fc1d4475c51
+  - enabled: 1
+    path: Assets/Scenes/park.unity
+    guid: ae89789ee4b27a64ca49b9e18f84485e
   m_configObjects: {}
