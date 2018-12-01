@@ -13,6 +13,8 @@ public class FishJump : MonoBehaviour
     public GameObject Dot;
     public GameObject Arrow;
 
+    public GameObject Tip;
+
     public bool CollisionEable;
 
     private Rigidbody2D rb;
@@ -56,6 +58,8 @@ public class FishJump : MonoBehaviour
         Circle.SetActive(true);
         Dot.SetActive(true);
         Arrow.SetActive(true);
+
+        Tip.SetActive(false);
     }
 
     private void OnMouseUp()
