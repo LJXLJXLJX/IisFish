@@ -9,15 +9,18 @@ public class FishIntoCatView : MonoBehaviour
 
     private void Start()
     {
-        cat = GameObject.Find("cat_0");
+        cat = GameObject.Find("cat");
     }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.transform.tag == "Player")
+        if (collision.gameObject.name == "fish" || collision.gameObject.name == "buket")
         {
-            CatRunToFish cr2f = cat.GetComponent<CatRunToFish>();
-            cr2f.RunToFish();
+            CatRunToTarget cr2f = cat.GetComponent<CatRunToTarget>();
+            cr2f.RunToTarget();
         }
     }
+
+
+
 }

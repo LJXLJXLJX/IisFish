@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CatRunToFish : MonoBehaviour
+public class CatRunToTarget : MonoBehaviour
 {
 
     public float catSpeed;
@@ -29,7 +29,7 @@ public class CatRunToFish : MonoBehaviour
 
     }
 
-    public void RunToFish()
+    public void RunToTarget()
     {
         rb.velocity = new Vector2(-catSpeed, 0.0f);
     }
@@ -48,7 +48,8 @@ public class CatRunToFish : MonoBehaviour
         {
             FishDie fd = collision.collider.gameObject.GetComponent<FishDie>();
             fd.fishDie();
-            resetCat();
+            rb.velocity = Vector2.zero;
+            Invoke("resetCat", 1.5f);
         }
     }
 }
