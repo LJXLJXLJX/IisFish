@@ -7,6 +7,7 @@ public class CatRunToTarget : MonoBehaviour
 
     public float catSpeed;
     public float animSpeed;
+    public float touchBucketForwardTime;
 
 
     public bool readyToRun;
@@ -56,7 +57,7 @@ public class CatRunToTarget : MonoBehaviour
         }
         if(collision.collider.name=="bucket")
         {
-            Invoke("catStop", 1.5f);
+            Invoke("catStop", touchBucketForwardTime);
             readyToRun = false;
         }
     }
