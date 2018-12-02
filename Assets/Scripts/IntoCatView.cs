@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class FishIntoCatView : MonoBehaviour
+public class IntoCatView : MonoBehaviour
 {
 
     GameObject cat;
@@ -14,10 +14,12 @@ public class FishIntoCatView : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if (collision.gameObject.name == "fish" || collision.gameObject.name == "buket")
+        if (collision.gameObject.name == "fish" || collision.gameObject.name == "bucket")
         {
+            Debug.Log(collision.gameObject.name);
             CatRunToTarget cr2f = cat.GetComponent<CatRunToTarget>();
-            cr2f.RunToTarget();
+            if (cr2f.readyToRun)
+                cr2f.RunToTarget();
         }
     }
 

@@ -6211,6 +6211,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   catSpeed: 2
   animSpeed: 0
+  readyToRun: 0
 --- !u!50 &1685091153
 Rigidbody2D:
   serializedVersion: 4

@@ -8,6 +8,8 @@ public class CatRunToTarget : MonoBehaviour
     public float catSpeed;
     public float animSpeed;
 
+
+    public bool readyToRun;
     Rigidbody2D rb;
     Vector2 originPos;
     Animation anim;
@@ -17,6 +19,7 @@ public class CatRunToTarget : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        readyToRun = true;
         rb = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animation>();
         fish = GameObject.FindGameObjectWithTag("Player");
@@ -37,7 +40,7 @@ public class CatRunToTarget : MonoBehaviour
     private void resetCat()
     {
         transform.position = originPos;
-        rb.velocity = Vector2.zero;
+        catStop();
 
     }
 
@@ -51,5 +54,17 @@ public class CatRunToTarget : MonoBehaviour
             rb.velocity = Vector2.zero;
             Invoke("resetCat", 1.5f);
         }
+        if(collision.collider.name=="bucket")
+        {
+            Invoke("catStop", 1.5f);
+            readyToRun = false;
+        }
     }
+
+    private void catStop()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
+
 }
