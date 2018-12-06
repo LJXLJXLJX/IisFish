@@ -46,7 +46,7 @@ public class CatRunToFish : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            FishDie fd = collision.collider.gameObject.GetComponent<FishDie>();
+            Fish fd = collision.collider.gameObject.GetComponent<Fish>();
             fd.fishDie();
             resetCat();
         }
