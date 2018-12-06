@@ -55,7 +55,7 @@ public class CatRunToTarget : MonoBehaviour
             rb.velocity = Vector2.zero;
             Invoke("resetCat", 1.5f);
         }
-        if (collision.collider.name == "bucket")
+        if (collision.collider.name=="bucket")
         {
             Invoke("catStop", touchBucketForwardTime);
             readyToRun = false;
