@@ -14,13 +14,13 @@ public class MainBg : MonoBehaviour {
 	void Update () {
 
         // 背景流动
-        if (transform.position.x < 18.6f)
+        if (transform.position.x < 20f)
         {
             transform.Translate(Vector3.right * FlowSpeed * Time.deltaTime);
         }
         else
         {
-            transform.position = new Vector3(-18.6f, 0, 0);
+            transform.position = new Vector3(-20f, 0, 0);
         }
 
     }

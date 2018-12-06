@@ -2,29 +2,27 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CameraControl : MonoBehaviour
-{
+public class CameraControl : MonoBehaviour {
 
     public GameObject followee;
     public float posZ;
     public float[] CameraPositionXRange;
     public float[] CameraPositionYRange;
-
-    // Use this for initialization
+    
     void Start()
     {
         updatePosition();
     }
-
-    // Update is called once per frame
+    
     void Update()
     {
         updatePosition();
     }
 
+    // 相机跟随鱼
     private void updatePosition()
     {
-        Vector3 camNewPos = followee.transform.position;
+        Vector3 camNewPos = followee.transform.position + new Vector3(3f, 0, 0);
 
         // 限制相机范围
         if (camNewPos.x <= CameraPositionXRange[0])
@@ -47,6 +45,5 @@ public class CameraControl : MonoBehaviour
 
         camNewPos.z = posZ;
         transform.position = camNewPos;
-
     }
 }

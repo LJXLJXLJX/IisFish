@@ -9,7 +9,7 @@ public class Flame : MonoBehaviour
     public float time;
     public float interval;
 
-    private FishDie fd;
+    private Fish fd;
     private bool isFlameShow;
 
 
@@ -35,13 +35,13 @@ public class Flame : MonoBehaviour
 
     private void OnCollisionStay2D(Collision2D collision)
     {
-        if (GameObject.Find("fish").GetComponent<FishJump>().CollisionEable == true)
+        if (GameObject.Find("fish").GetComponent<Fish>().CollisionEable == true)
         {
             GameObject collisionObj;
             if (collision.collider.tag == "Player")
             {
                 collisionObj = collision.collider.gameObject;
-                fd = collisionObj.GetComponent<FishDie>();
+                fd = collisionObj.GetComponent<Fish>();
                 fd.fishDie();
             }
         }
