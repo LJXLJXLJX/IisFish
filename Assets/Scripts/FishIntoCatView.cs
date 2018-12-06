@@ -16,8 +16,8 @@ public class FishIntoCatView : MonoBehaviour
     {
         if (collision.transform.tag == "Player")
         {
-            CatRunToTarget cr2f = cat.GetComponent<CatRunToTarget>();
-            cr2f.RunToTarget();
+            CatRunToFish cr2f = cat.GetComponent<CatRunToFish>();
+            cr2f.RunToFish();
         }
     }
 }
