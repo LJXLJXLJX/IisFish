@@ -2,12 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class CatRunToFish : MonoBehaviour
+public class CatRunToTarget : MonoBehaviour
 {
 
     public float catSpeed;
     public float animSpeed;
+    public float touchBucketForwardTime;
 
+
+    public bool readyToRun;
     Rigidbody2D rb;
     Vector2 originPos;
     Animation anim;
@@ -17,6 +20,7 @@ public class CatRunToFish : MonoBehaviour
     // Use this for initialization
     void Start()
     {
+        readyToRun = true;
         rb = gameObject.GetComponent<Rigidbody2D>();
         anim = gameObject.GetComponent<Animation>();
         fish = GameObject.FindGameObjectWithTag("Player");
@@ -29,7 +33,7 @@ public class CatRunToFish : MonoBehaviour
 
     }
 
-    public void RunToFish()
+    public void RunToTarget()
     {
         rb.velocity = new Vector2(-catSpeed, 0.0f);
     }
@@ -37,7 +41,7 @@ public class CatRunToFish : MonoBehaviour
     private void resetCat()
     {
         transform.position = originPos;
-        rb.velocity = Vector2.zero;
+        catStop();
 
     }
 
@@ -48,7 +52,20 @@ public class CatRunToFish : MonoBehaviour
         {
             Fish fd = collision.collider.gameObject.GetComponent<Fish>();
             fd.fishDie();
-            resetCat();
+            rb.velocity = Vector2.zero;
+            Invoke("resetCat", 1.5f);
+        }
+        if (collision.collider.name == "bucket")
+        {
+            Invoke("catStop", touchBucketForwardTime);
+            readyToRun = false;
         }
     }
+
+    private void catStop()
+    {
+        rb.velocity = Vector2.zero;
+    }
+
+
 }
