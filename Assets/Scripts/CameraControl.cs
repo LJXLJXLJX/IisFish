@@ -8,15 +8,22 @@ public class CameraControl : MonoBehaviour {
     public float posZ;
     public float[] CameraPositionXRange;
     public float[] CameraPositionYRange;
-    
+
+    // 相机是否跟随鱼
+    public bool CameraFollow;
+
     void Start()
     {
+        CameraFollow = true;
         updatePosition();
     }
     
     void Update()
     {
-        updatePosition();
+        if (CameraFollow)
+        {
+            updatePosition();
+        }
     }
 
     // 相机跟随鱼

@@ -74,6 +74,9 @@ public class FishJump : MonoBehaviour {
 
         // 关闭新手引导
         Tip1.SetActive(false);
+
+        // 开始计时
+        FishScript.sw.Start();
     }
 
     // 鼠标抬起事件
