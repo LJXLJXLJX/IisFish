@@ -1,9 +1,9 @@
 fileFormatVersion: 2
-guid: 2c7cfa2ca073caf40a1bb0c0ed69775d
+guid: 14281a16dcdbe1848902e426e8858d07
 TextureImporter:
   fileIDToRecycleName:
-    21300000: river_0
-    21300002: river_1
+    21300000: background 1_0
+    21300002: background 1_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -22,7 +22,7 @@ TextureImporter:
     externalNormalMap: 0
     heightScale: 0.25
     normalMapFilter: 0
-  isReadable: 1
+  isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
   grayScaleToAlpha: 0
@@ -97,13 +97,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: river_0
+      name: background 1_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1151
-        width: 5654
-        height: 722
+        x: 14849
+        y: 1240
+        width: 300
+        height: 295
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -111,19 +111,19 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac08ea029063b2b44a16f03743a785a0
+      spriteID: 5126ca5c64e3d6c428da0e09715c90d1
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: river_1
+      name: background 1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 5654
-        height: 722
+        y: 3541
+        width: 21779
+        height: 2962
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,7 +131,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 952064797a2127d4ebe80ca9001cce7e
+      spriteID: 0465dd3e92133a74bba7384ff169ac19
       vertices: []
       indices: 
       edges: []
@@ -139,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: fd46777dca5186842ba7e624f663d3f7
+    spriteID: a2fc590b54c33b248acbfc539a047f78
     vertices: []
     indices: 
     edges: []

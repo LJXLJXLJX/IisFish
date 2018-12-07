@@ -50,8 +50,8 @@ public class CatRunToTarget : MonoBehaviour
     {
         if (collision.collider.tag == "Player")
         {
-            Fish fd = collision.collider.gameObject.GetComponent<Fish>();
-            fd.fishDie();
+            Fish fish = collision.collider.gameObject.GetComponent<Fish>();
+            fish.fishDie();
             rb.velocity = Vector2.zero;
             Invoke("resetCat", 1.5f);
         }
