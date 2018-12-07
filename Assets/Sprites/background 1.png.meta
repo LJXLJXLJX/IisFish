@@ -1,12 +1,9 @@
 fileFormatVersion: 2
-guid: 0ced97358f8542e4693fe0c738b9d2f2
+guid: 14281a16dcdbe1848902e426e8858d07
 TextureImporter:
   fileIDToRecycleName:
-    21300000: riverlayer_0
-    21300002: riverlayer_1
-    21300004: riverlayer_2
-    21300006: riverlayer_3
-    21300008: riverlayer_4
+    21300000: background 1_0
+    21300002: background 1_1
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -100,101 +97,41 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: riverlayer_0
+      name: background 1_0
+      rect:
+        serializedVersion: 2
+        x: 14849
+        y: 1240
+        width: 300
+        height: 295
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5126ca5c64e3d6c428da0e09715c90d1
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: background 1_1
       rect:
         serializedVersion: 2
         x: 0
-        y: 3253
-        width: 5670
-        height: 356
+        y: 3541
+        width: 21779
+        height: 2962
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 815dfaad1fcce6c478229929ad231045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 2556
-        width: 5653
-        height: 365
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c5800ec59894e443b39ad1c5f9ef2e1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_2
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 1634
-        width: 5650
-        height: 365
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0955c16ece4a08440a45b1882f05e2c1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_3
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 940
-        width: 5653
-        height: 365
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 524dbd2d9cac2c84a9a2966662a35b40
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_4
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 0
-        width: 5670
-        height: 375
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 05dc900a8f5aceb41bbc878214902a6f
+      spriteID: 0465dd3e92133a74bba7384ff169ac19
       vertices: []
       indices: 
       edges: []
@@ -202,7 +139,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ae182aec49595234a8639a406d4faa10
+    spriteID: a2fc590b54c33b248acbfc539a047f78
     vertices: []
     indices: 
     edges: []

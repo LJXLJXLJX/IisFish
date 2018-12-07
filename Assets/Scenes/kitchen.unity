@@ -3386,11 +3386,6 @@ EdgeCollider2D:
   m_Points:
   - {x: -10.611179, y: 4.4216022}
   - {x: 10.536915, y: 4.4011354}
---- !u!1 &745002356 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 1856431775342094, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-    type: 2}
-  m_PrefabInternal: {fileID: 1444626491}
 --- !u!1 &750203962
 GameObject:
   m_ObjectHideFlags: 0
@@ -5190,7 +5185,7 @@ SpriteRenderer:
   m_SpriteSortPoint: 0
 --- !u!1 &1049351263 stripped
 GameObject:
-  m_CorrespondingSourceObject: {fileID: 1521579662953828, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
+  m_CorrespondingSourceObject: {fileID: 1695657005680648, guid: 81e9a77a6403fb2439fec8602832e53a,
     type: 2}
   m_PrefabInternal: {fileID: 1444626491}
 --- !u!1 &1057471915
@@ -6421,106 +6416,54 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: SpeakSprites.Array.size
-      value: 6
-      objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_LocalPosition.x
       value: -44.89
       objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_LocalPosition.y
       value: -4.28
       objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_LocalPosition.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_LocalRotation.x
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_LocalRotation.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_LocalRotation.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_LocalRotation.w
       value: 1
       objectReference: {fileID: 0}
-    - target: {fileID: 4598083052924848, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+    - target: {fileID: 4586157277822906, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
       propertyPath: m_RootOrder
       value: 5
       objectReference: {fileID: 0}
-    - target: {fileID: 114174862178996770, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
+    - target: {fileID: 114888035882618428, guid: 81e9a77a6403fb2439fec8602832e53a,
         type: 2}
       propertyPath: Tip1
       value: 
       objectReference: {fileID: 440109569}
-    - target: {fileID: 114174862178996770, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
+    - target: {fileID: 114888035882618428, guid: 81e9a77a6403fb2439fec8602832e53a,
         type: 2}
       propertyPath: Tip2
       value: 
       objectReference: {fileID: 937813744}
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: SpeakSprites.Array.data[0]
-      value: 
-      objectReference: {fileID: 21300000, guid: a7f49e1cf8bcd714d9a5322aa1ba1829,
-        type: 3}
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: SpeakSprites.Array.data[1]
-      value: 
-      objectReference: {fileID: 21300000, guid: 2f5b0602e269d5a4a9b705f7db737324,
-        type: 3}
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: SpeakSprites.Array.data[2]
-      value: 
-      objectReference: {fileID: 21300000, guid: ccc6b3521b429344c82313133f1dc115,
-        type: 3}
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: SpeakSprites.Array.data[3]
-      value: 
-      objectReference: {fileID: 21300000, guid: 11bd524e58e159342b674277e4d0a00c,
-        type: 3}
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: SpeakSprites.Array.data[4]
-      value: 
-      objectReference: {fileID: 21300000, guid: 9bfcd912c7a17bb448e4f75618c6614a,
-        type: 3}
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: SpeakSprites.Array.data[5]
-      value: 
-      objectReference: {fileID: 21300000, guid: 8b4ab25e18608b94db82519e883e5678,
-        type: 3}
-    - target: {fileID: 1324813186178414, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
-      propertyPath: m_IsActive
-      value: 0
+    - target: {fileID: 1695657005680648, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
+      propertyPath: m_Name
+      value: fish
       objectReference: {fileID: 0}
-    - target: {fileID: 212485925666371860, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: 21300000, guid: 11bd524e58e159342b674277e4d0a00c,
-        type: 3}
-    - target: {fileID: 114221944441671466, guid: af6ff7b70f53b5a4d8dde1fb2e573a53,
-        type: 2}
-      propertyPath: FishJump
-      value: 
-      objectReference: {fileID: 745002356}
     m_RemovedComponents: []
-  m_SourcePrefab: {fileID: 100100000, guid: af6ff7b70f53b5a4d8dde1fb2e573a53, type: 2}
+  m_SourcePrefab: {fileID: 100100000, guid: 81e9a77a6403fb2439fec8602832e53a, type: 2}
   m_IsPrefabAsset: 0
 --- !u!1 &1465022871
 GameObject:

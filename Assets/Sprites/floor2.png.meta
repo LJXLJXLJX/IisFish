@@ -1,12 +1,10 @@
 fileFormatVersion: 2
-guid: 0ced97358f8542e4693fe0c738b9d2f2
+guid: a27f70dc291c0fe47a8c09de45f6ddb9
 TextureImporter:
   fileIDToRecycleName:
-    21300000: riverlayer_0
-    21300002: riverlayer_1
-    21300004: riverlayer_2
-    21300006: riverlayer_3
-    21300008: riverlayer_4
+    21300000: floor2_0
+    21300002: floor2_1
+    21300004: floor2_2
   externalObjects: {}
   serializedVersion: 7
   mipmaps:
@@ -100,101 +98,61 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: riverlayer_0
+      name: floor2_0
       rect:
         serializedVersion: 2
-        x: 0
-        y: 3253
-        width: 5670
-        height: 356
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 815dfaad1fcce6c478229929ad231045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_1
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 2556
-        width: 5653
-        height: 365
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 9c5800ec59894e443b39ad1c5f9ef2e1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_2
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 1634
-        width: 5650
-        height: 365
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 0955c16ece4a08440a45b1882f05e2c1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_3
-      rect:
-        serializedVersion: 2
-        x: 10
-        y: 940
-        width: 5653
-        height: 365
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 524dbd2d9cac2c84a9a2966662a35b40
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: riverlayer_4
-      rect:
-        serializedVersion: 2
-        x: 0
+        x: 80
         y: 0
-        width: 5670
-        height: 375
+        width: 3073
+        height: 966
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05dc900a8f5aceb41bbc878214902a6f
+      spriteID: fc7c0459df1399e459041f7236538ff4
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor2_1
+      rect:
+        serializedVersion: 2
+        x: 3486
+        y: 0
+        width: 7799
+        height: 966
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f867645e7d874bb4981ed5430227f471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: floor2_2
+      rect:
+        serializedVersion: 2
+        x: 11618
+        y: 0
+        width: 2494
+        height: 966
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 236045c4afcbd7d4ab8d427df09fba74
       vertices: []
       indices: 
       edges: []
@@ -202,7 +160,7 @@ TextureImporter:
     outline: []
     physicsShape: []
     bones: []
-    spriteID: ae182aec49595234a8639a406d4faa10
+    spriteID: b4edb3e2419c53a499789bb9bc77f471
     vertices: []
     indices: 
     edges: []
