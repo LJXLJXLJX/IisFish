@@ -15,6 +15,8 @@ public class FishJump : MonoBehaviour {
     public GameObject Dot;
     public GameObject Arrow;
     public GameObject FishSprite;
+    // 播放音效物体
+    //public GameObject SoundPlayer;
 
     public GameObject Tip1;
     public GameObject Tip2;
@@ -34,6 +36,8 @@ public class FishJump : MonoBehaviour {
     // 出射距离
     Vector3 loosePoint;
 
+    // 音效文件
+    //public AudioClip Sound2;
 
     void Start() {
 
@@ -42,6 +46,7 @@ public class FishJump : MonoBehaviour {
         FishScript = Fish.GetComponent<Fish>();
         fishToLoosePointRay = new Ray2D(Fish.transform.position, Vector2.zero);
 
+        //SoundPlayer = GameObject.Find("AudioController").transform.GetChild(2).gameObject;
     }
     
     void Update() {
@@ -91,6 +96,8 @@ public class FishJump : MonoBehaviour {
         Circle.SetActive(false);
         Dot.SetActive(false);
         Arrow.SetActive(false);
+
+        //SoundPlayer.GetComponent<AudioSource>().PlayOneShot(Sound2);
 
         // 关闭新手引导
         Tip2.SetActive(false);

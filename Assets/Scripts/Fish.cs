@@ -24,6 +24,8 @@ public class Fish : MonoBehaviour {
     public GameObject FishSprite;
     // FishJump物体
     public GameObject FishJump;
+    // 播放音效物体
+    public GameObject SoundPlayer;
 
     //// 鱼的初始位置
     //private Vector2 originalPos;
@@ -47,6 +49,9 @@ public class Fish : MonoBehaviour {
     // 死亡次数
     public int Death;
 
+    // 音效文件
+    public AudioClip Sound1;
+
 
 
     void Start () {
@@ -63,6 +68,8 @@ public class Fish : MonoBehaviour {
         sw.Stop();
         sw.Reset();
         Death = 0;
+
+        SoundPlayer = GameObject.Find("AudioController").transform.GetChild(1).gameObject;
     }
 	
 	void Update () {
@@ -118,6 +125,8 @@ public class Fish : MonoBehaviour {
             // 地面
             if (collision.collider.tag == "Ground")
             {
+                SoundPlayer.GetComponent<AudioSource>().PlayOneShot(Sound1);
+
                 onGround = true;
                 gameObject.transform.GetChild(0).GetComponent<FishJump>().FishSpring();
 
@@ -133,6 +142,8 @@ public class Fish : MonoBehaviour {
             // 向左反弹
             if (collision.collider.tag == "ReboundLeft")
             {
+                SoundPlayer.GetComponent<AudioSource>().PlayOneShot(Sound1);
+
                 rb.AddForce(new Vector2 (-400, 0));
                 Speak.SetActive(false);
                 Speak.GetComponent<SpriteRenderer>().sprite = SpeakSprites[4];
@@ -143,6 +154,8 @@ public class Fish : MonoBehaviour {
             // 向右反弹
             if (collision.collider.tag == "ReboundRight")
             {
+                SoundPlayer.GetComponent<AudioSource>().PlayOneShot(Sound1);
+
                 rb.AddForce(new Vector2(400, 0));
                 Speak.SetActive(false);
                 Speak.GetComponent<SpriteRenderer>().sprite = SpeakSprites[4];

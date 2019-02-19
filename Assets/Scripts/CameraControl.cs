@@ -29,7 +29,7 @@ public class CameraControl : MonoBehaviour {
     // 相机跟随鱼
     private void updatePosition()
     {
-        Vector3 camNewPos = followee.transform.position + new Vector3(3f, 0, 0);
+        Vector3 camNewPos = followee.transform.position + new Vector3(4f, 0, 0);
 
         // 限制相机范围
         if (camNewPos.x <= CameraPositionXRange[0])

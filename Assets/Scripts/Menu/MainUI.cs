@@ -16,6 +16,7 @@ public class MainUI : MonoBehaviour {
     public Canvas SettingsCanvas;
     public Canvas TipCanvas;
     public Canvas ChooseModeCanvas;
+    public Canvas LevelsCanvas;
 
 
     public Text MenuCanvas_UserNameText;
@@ -42,6 +43,7 @@ public class MainUI : MonoBehaviour {
         SettingsCanvas.enabled = false;
         TipCanvas.enabled = true;
         ChooseModeCanvas.enabled = false;
+        LevelsCanvas.enabled = false;
 
         MenuCanvasDisplayUsername();
 
@@ -333,11 +335,16 @@ public class MainUI : MonoBehaviour {
     public void ChooseModeCanvas_Mode1Button_Onclick()
     {
 
-        // 跳转到Loading界面
-        //保存需要加载的目标场景  
-        Globe.nextSceneName = "kitchen";
-        //异步加载场景
-        SceneManager.LoadScene("LoadingScene");
+        //// 跳转到Loading界面
+        ////保存需要加载的目标场景  
+        //Globe.nextSceneName = "kitchen";
+        ////异步加载场景
+        //SceneManager.LoadScene("LoadingScene");
+
+        // 显示选关界面
+        LevelsCanvas.enabled = true;
+        ChooseModeCanvas.enabled = false;
+
     }
 
     public void ChooseModeCanvas_Mode2Button_Onclick()
@@ -347,5 +354,26 @@ public class MainUI : MonoBehaviour {
         prefab.GetComponent<RectTransform>().anchoredPosition = new Vector2(0, -50);
         prefab.transform.GetChild(1).GetComponent<Text>().text = "敬请期待！";
         prefab.GetComponent<RectTransform>().localScale = new Vector3(1, 1, 1);
+    }
+
+    // ***********************
+    // ——LevelsCanvasCanvas
+    // ***********************
+    public void LevelsCanvas_BackButton_Onclick()
+    {
+        // 关闭选关界面
+        LevelsCanvas.enabled = false;
+        ChooseModeCanvas.enabled = true;
+    }
+
+    public void Level1Canvas_Mode1Button_Onclick()
+    {
+
+        // 跳转到Loading界面
+        //保存需要加载的目标场景  
+        Globe.nextSceneName = "kitchen";
+        //异步加载场景
+        SceneManager.LoadScene("LoadingScene");
+
     }
 }

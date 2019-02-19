@@ -14,6 +14,7 @@ public class GameUI : MonoBehaviour {
     public Text GameCanvas_DeathText;
     public Text FinishCanvas_TimerText;
     public Text FinishCanvas_DeathText;
+    public Text FinishCanvas_BestText;
 
     // 时间参数
     int timeMinutes;
@@ -22,6 +23,8 @@ public class GameUI : MonoBehaviour {
     string textSeconds;
     // 死亡次数
     int death;
+    // 最高记录
+    int best;
 
     // Fish物体
     public GameObject Fish;
@@ -45,6 +48,20 @@ public class GameUI : MonoBehaviour {
         // 时间初始化
         timeMinutes = 0;
         timeSeconds = 0;
+
+        //初始化
+        // 判断 PlayerPrefs中是否存在这个key
+        if (PlayerPrefs.HasKey("KEY_Best"))
+        {
+            //存在就获取已有的值
+            best = PlayerPrefs.GetInt("KEY_Best", 0);
+        }
+        else
+        {
+            //不存在就设置为默认值
+            best = 999;
+            PlayerPrefs.SetInt("KEY_Best", best);
+        }
 
     }
 	
@@ -88,6 +105,38 @@ public class GameUI : MonoBehaviour {
 
         FinishCanvas_TimerText.text = "用时：" + textMinutes + ":" + textSeconds;
         FinishCanvas_DeathText.text = "死亡 " + death + " 次";
+
+        //更新最高记录
+        if ((timeMinutes * 60 + timeSeconds) < best)
+        {
+            best = timeMinutes * 60 + timeSeconds;
+            PlayerPrefs.SetInt("KEY_Best", best);
+        }
+
+        int bestMin = best / 60;
+        int bestSec = best - best / 60 * 60;
+
+        string bestMinStr;
+        string bestSecStr;
+
+        if (bestMin >= 10)
+        {
+            bestMinStr = bestMin.ToString();
+        }
+        else
+        {
+            bestMinStr = "0" + bestMin.ToString();
+        }
+        if (bestSec >= 10)
+        {
+            bestSecStr = bestSec.ToString();
+        }
+        else
+        {
+            bestSecStr = "0" + bestSec.ToString();
+        }
+
+        FinishCanvas_BestText.text = "最高记录：" + bestMinStr + ":" + bestSecStr;
     }
 
 
