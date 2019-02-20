@@ -8,21 +8,28 @@ public class CameraControl : MonoBehaviour {
     public float posZ;
     public float[] CameraPositionXRange;
     public float[] CameraPositionYRange;
-    
+
+    // 相机是否跟随鱼
+    public bool CameraFollow;
+
     void Start()
     {
+        CameraFollow = true;
         updatePosition();
     }
     
     void Update()
     {
-        updatePosition();
+        if (CameraFollow)
+        {
+            updatePosition();
+        }
     }
 
     // 相机跟随鱼
     private void updatePosition()
     {
-        Vector3 camNewPos = followee.transform.position + new Vector3(3f, 0, 0);
+        Vector3 camNewPos = followee.transform.position + new Vector3(4f, 0, 0);
 
         // 限制相机范围
         if (camNewPos.x <= CameraPositionXRange[0])

@@ -8,7 +8,6 @@ TagManager:
   - Dead
   - ReboundLeft
   - ReboundRight
-  - Box
   layers:
   - Default
   - TransparentFX

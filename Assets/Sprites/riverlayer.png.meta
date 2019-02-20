@@ -114,7 +114,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 815dfaad1fcce6c478229929ad231045
+      spriteID: 99377cf8f5655984fa61e467d0f7fdd0
       vertices: []
       indices: 
       edges: []
@@ -123,8 +123,8 @@ TextureImporter:
       name: riverlayer_1
       rect:
         serializedVersion: 2
-        x: 10
-        y: 2556
+        x: 17
+        y: 2551
         width: 5653
         height: 365
       alignment: 0
@@ -134,7 +134,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 9c5800ec59894e443b39ad1c5f9ef2e1
+      spriteID: 495f8607bdb6b1d409dbf749ccbeb26c
       vertices: []
       indices: 
       edges: []
@@ -143,8 +143,8 @@ TextureImporter:
       name: riverlayer_2
       rect:
         serializedVersion: 2
-        x: 10
-        y: 1634
+        x: 20
+        y: 1625
         width: 5650
         height: 365
       alignment: 0
@@ -154,7 +154,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0955c16ece4a08440a45b1882f05e2c1
+      spriteID: f5097069bdc68344d8c6abf7a7fb7994
       vertices: []
       indices: 
       edges: []
@@ -163,8 +163,8 @@ TextureImporter:
       name: riverlayer_3
       rect:
         serializedVersion: 2
-        x: 10
-        y: 940
+        x: 12
+        y: 935
         width: 5653
         height: 365
       alignment: 0
@@ -174,7 +174,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 524dbd2d9cac2c84a9a2966662a35b40
+      spriteID: dde939cd2c2d5b9438031fa184078c92
       vertices: []
       indices: 
       edges: []
@@ -194,7 +194,7 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05dc900a8f5aceb41bbc878214902a6f
+      spriteID: c82f5931ad27bff4d8c72ae92321e993
       vertices: []
       indices: 
       edges: []
