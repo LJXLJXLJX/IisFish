@@ -74,7 +74,8 @@ public class Box : MonoBehaviour
         {
             if (transform.position.y >= originPos.y || !isFloating)
             {
-                transform.position = originPos;
+                if (!isFloating)
+                    transform.position = originPos;
                 break;
             }
             yield return new WaitForSeconds(0.0f);
